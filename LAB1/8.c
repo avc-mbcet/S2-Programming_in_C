@@ -3,7 +3,8 @@ int main() {
   int n;
   printf("Enter the size of array\n");
   scanf("%d", &n);
-  int array[n], i, sum = 0, average;
+  int array[n], i;
+  float sum = 0, average;
   printf("Enter n values\n");
   for (i = 0; i < n; i++) {
     scanf("%d", &array[i]);
@@ -11,8 +12,8 @@ int main() {
   for (i = 0; i < n; i++) {
     sum = sum + array[i];
   }
-  printf("Sum is %d\n", sum);
+  printf("Sum is %f\n", sum);
   average = sum / n;
-  printf("Average is %d\n", average);
+  printf("Average is %f\n", average);
   return 0;
 }
